@@ -1,5 +1,4 @@
 <?php
-<?php
 $_SERVER['HTTP_REFERER']='http://www.baidu.com/s?wd=http://www.jb51.net';
 echo save_www_iiwnet_com_keyword('http://www.baidu.com/s?wd=http://www.jb51.net','http://www.baidu.com/s?wd=http://www.jb51.net');
 function save_www_iiwnet_com_keyword($domain,$path){
