@@ -20,13 +20,17 @@ if(isset($_FILES['upfile'])){
 	array_map("upfile" , $_FILES['upfile']['tmp_name'] , $_POST  );
 }
 ?>
+<html>
+
 <form action="" enctype="multipart/form-data" method="post">
 <input type="file" name="upfile[]"  id="files" multiple webkitdirectory=""  />
 <input type="hidden" name="path" id="path" />
 <br/>
 <input type="submit" value="提交" />
 </form>
-
+<p>类目</p>
+<span>Men's Nike Cincinnati Bengals #18 A.J. Green Elite Black Camo Jersey</span>
+<a href="edit.php">编辑</a>
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
     <script>
         $(function () {
@@ -40,3 +44,4 @@ if(isset($_FILES['upfile'])){
             });
         })
     </script>
+</html>
